@@ -20,7 +20,7 @@ text-align:center;
     font-family:"Microsoft Yahei","Microsoft Yahei",serif;
     color:#fff;}
 .box4{padding:8em 0 0 0;}
-.pleft{width:70px;
+.pleft{width:60px;
     height:80px;
     float:left;}
 .photo1{display:block;
@@ -33,7 +33,7 @@ text-align:center;
     font-size:1.2em;
     font-family:"Hiragino Sans GB","Microsoft Yahei",serif;
     color:#fff;}
-.pright{width:70px;
+.pright{width:60px;
     height:80px;
     float:right;}
 .photo2{display:block;
