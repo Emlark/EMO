@@ -4,141 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
     <title>登录</title>
-    <style>
-        html,body{margin:0;
-            padding:0;
-            font-size:62.5%;
-        background-color: rgb(239,240,244);
-            overflow:hidden;
-        }
-
-        header{background:rgb(95,192,205);
-            padding:3px 10px;
-            margin:0;
-            text-align:center;
-            line-height:40px;
-            height:40px;
-            color:#fff;
-       }
-
-
-        .box1{
-            font-size:2.2em;
-            float:left;
-            line-height: 40px;
-            height:40px;
-            cursor:pointer;
-            border:0;
-            background-color:rgb(95,192,205);
-            color: #fff;
-            padding:0;
-            margin:0;
-            outline:none;
-              }
-        .box2{display:inline;
-            font-size:2.6em;
-            font-weight:bold;
-              }
-
-        .box3{font-size:2.2em;
-            float:right;
-              cursor:pointer;
-              border:0;
-            background-color:rgb(95,192,205);
-            color: #fff;
-            line-height:40px;
-            height:40px;
-            padding:0;
-            margin:0;
-            outline:none;
-        }
-
-
-
-        .in{border:0;
-            width:100%;
-            height:50px;
-            margin-top:10px;
-            background-color: #fff;
-            padding-left: 80px;
-            position:relative;
-        }
-
-        .in1{position:absolute;
-            left:0;
-            top:12px;
-            border-right:1px solid rgb(234,237,238);
-            text-align:center;
-            padding:3px 22px;
-            margin:0;
-            width:14px;
-            height:20px
-        }
-        .in2{
-            border:0;
-            outline:none;
-            width:100%;
-            height:48px;
-
-        }
-        .in4{position:absolute;
-            background-image:url("https://github.com/Emlark/EMO/blob/master/images/css4_10.png?raw=true");
-            left:20px;
-            top:14px;
-            background-repeat:no-repeat;
-            background-size:14px 22px;
-            width:14px;
-            height:22px;}
-
-        .butn{background-color:rgb(95,192,205);
-            height:52px;
-            line-height:52px;
-            margin-top:10px;
-            padding:0;
-            width:100%;
-            border:0;
-            font-size:2.5em;
-            font-weight:bold;
-            color:#fff;
-            outline:none;
-            cursor: pointer;}
-
-        .forg{margin:13px 11px;
-            padding:0;
-            font-size:1em;
-            float:right;}
-
-    </style>
+    <link href="syle.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+
 <header>
     <button type="submit" onclick="location.href=''" class="box1">注册</button>
-    <div class="box2">登录</div>
+
     <button type="submit" onclick="location.href=''" class="box3">关闭</button>
+    <div class="box2">登录</div>
 </header>
 
 <main>
+    <label for="txt">
     <div class="in">
         <div class="in1"><img src="https://github.com/Emlark/EMO/blob/master/images/css4_06.png?raw=true" style="width:14px;
             height:20px;">
         </div>
-    <input type="text" class="in2" name="name" placeholder="请输入手机号">
-     </div>
+    <input type="text" class="in2" name="name" id="txt" placeholder="请输入手机号">
+    </div>
+    </label>
 
+    <label for="pss">
     <div class="in">
         <div class="in1"><img src="https://github.com/Emlark/EMO/blob/master/images/css4_10.png?raw=true" style="width:14px;
             height:20px;"></div>
-        <input type="password" class="in2" name="name" placeholder="请输入密码">
+        <input type="password" class="in2" name="name" id="pss" placeholder="请输入密码">
     </div>
-
+    </label>
 
     <form method="post">
     <input type="submit" class="butn" value="登   录">
     </form>
 
-<div class="forg">
+    <div class="forg">
     <a href="" style="color:rgb(95,192,205);">忘记密码</a>
-</div>
+    </div>
+
 </main>
 </body>
 </html>
