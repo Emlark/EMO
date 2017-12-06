@@ -92,7 +92,8 @@ header{
         align-items:center;
     }
 
-.skill{min-width:48px;
+.skill{min-width:50px;
+    font-size:2em;
     margin:10px;
     padding:0 5px;
     border-left: 3px solid rgb(92,192,205);
@@ -127,7 +128,7 @@ header{
     display:flex;
 }
 
-.list2{min-width:48px;
+.list2{min-width:50px;
     color:#ccc;
     font-size:2em;
     margin-right:10px;
