@@ -122,13 +122,13 @@ header{
     align-items: center;
 
 }
-.list1{
+.list1{font-size:2em;
     margin:0;
     padding:0 7px;
     display:flex;
 }
 
-.list2{min-width:50px;
+.list2{min-width:60px;
     color:#ccc;
     font-size:2em;
     margin-right:10px;
