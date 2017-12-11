@@ -10,6 +10,9 @@ body {
     padding-bottom: 65px;
 }
 a{display:block;}
+a:hover{
+    text-decoration:none;
+}
 header {
     position: relative;
     top: 0;
