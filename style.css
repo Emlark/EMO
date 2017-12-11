@@ -158,7 +158,7 @@ main{height:100%;
 }
 
 .list3{position:absolute;
-    right:.6rem;
+    right:.25rem;
     font-size:.15rem;
     font-weight:bold;
     color:#E63B0E;
@@ -240,7 +240,7 @@ footer {
     width:46px;
     height:60px;
     position:absolute;
-    left:25%;
+    left:23%;
     top:0;
     text-align:center;
     color:#5FC0CD;
@@ -278,7 +278,7 @@ footer {
     width:42px;
     height:60px;
     position:absolute;
-    right:25%;
+    right:23%;
     top:0;
     text-align:center;
     color:#999999;
