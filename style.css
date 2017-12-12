@@ -16,6 +16,10 @@ body {
  a:hover {
     text-decoration: none;
 }
+ li {
+     text-align:center;
+}
+
 header {
     position: relative;
     top: 0;
