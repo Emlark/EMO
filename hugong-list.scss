@@ -13,6 +13,10 @@ $md-word:.15rem;
   transform: scale($n,$n);
 }
 
+@mixin rounded($vert,$horz,$radius:8px){
+   border-#{$vert}-#{$horz}-radius:$radius;
+}
+
 .flex-center{
   display:flex;
   align-items:center;
@@ -25,7 +29,7 @@ html {
   font-size: 625%;
   margin: 0;
   padding: 0;
-  overflow:auto;
+  overflow-x:hidden;
 }
 
 body {
@@ -153,16 +157,81 @@ main {
   }
 }
 
+.drop-down{
+  position:relative;
+  width:100%;
+  height:100%;
+}
+
+
+
+.drop-btn{
+  border:none;
+  background:#fff;
+  display:block;
+  color:#000;
+  width:100%;
+  height:100%;
+  padding:0;
+}
+
+.dropdown-menu{
+  display:none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-menu a{
+  text-decoration:none;
+  color:$word-grey;
+}
+
+.dropdown-menu a:hover{
+  color:#000;
+  background-color:#f1f1f1;
+}
+
+//.drop-btn:focus+.dropdown-menu{
+//  display:block;
+//
+//}
+.drop-down:hover .dropdown-menu{
+  display:block;
+
+}
+
+.caret{
+  border-top:5px solid #000;
+  border-bottom:5px solid transparent;
+  border-right:5px solid transparent;
+  border-left:5px solid transparent;
+}
+
+ul{
+  margin:0;
+  padding:0;
+  @include rounded(bottom,left);
+  @include rounded(bottom,right);
+  z-index:15;
+  @include borde(top);
+}
+
+li{
+  list-style-type:none;
+  background-color:#fff;
+@include rounded(bottom,left);
+  @include rounded(bottom,right);
+}
+
 .bt1 {
   flex: 0 0 33.3%;
   height: 45px;
   width: 100%;
   margin: 0;
-  padding: .1rem 0;
+  padding: 0;
   @include borde(right);
-  @extend .flex-center;
-  justify-content: center;
-
 }
 
 
@@ -171,11 +240,9 @@ main {
   height: 45px;
   width: 100%;
   margin: 0;
-  padding: .02rem 0;
+  padding: 0;
   @include borde(right);
   flex: 0 0 33.3%;
-  @extend .flex-center;
-  justify-content: center;
 }
 
 .bt3 {
@@ -184,8 +251,6 @@ main {
   margin: 0;
   padding: 0;
   flex: 0 0 33.3%;
-  @extend .flex-center;
-  justify-content: center;
 }
 
 
@@ -209,13 +274,7 @@ main {
             top: .1rem;
           }
 
-          .list2 {
-            margin:0;
-            font-size: $md-word;
-            width:1.5rem;
-            white-space: nowrap;
 
-          }
 
           .list3 {
             position: absolute;
@@ -271,6 +330,7 @@ main {
             overflow:hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+            font-size:1%;
           }
 }
 
@@ -310,6 +370,7 @@ footer {
   text-align: center;
   color: $word-blue;
   text-decoration: none;
+  font-size:$md-word;
 }
 .icon2 {
   height: 40px;
@@ -347,6 +408,7 @@ footer {
   text-align: center;
   color: $word-grey;
   text-decoration: none;
+  font-size:$md-word;
 }
 
 .icon4 {
